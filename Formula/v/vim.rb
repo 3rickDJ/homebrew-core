@@ -66,7 +66,8 @@ class Vim < Formula
                           "--enable-rubyinterp",
                           "--enable-python3interp",
                           "--disable-gui",
-                          "--without-x",
+                          "--with-x",
+                          "--with-features=huge",
                           "--enable-luainterp",
                           "--with-lua-prefix=#{Formula["lua"].opt_prefix}"
     system "make"
